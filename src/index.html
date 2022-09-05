@@ -2,30 +2,40 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
-    />
+    <title>↗ DiaMetrics</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
     <link rel="stylesheet" href="index.css" />
     <script defer src="render.js"></script>
   </head>
   <body>
-    <div id="title">
-      <h1> ↗ DiaMetrics</h1>
-    </div>
+    <div id="container1">
+      <!-- <div id="title">
+        <h1> ↗ DiaMetrics</h1>
+      </div> -->
+      <div id="container2">
 
-    <div id = 'mainPage'>
-    <div class="child">
-      <canvas id="TIRChart" width="300" height="300"></canvas>
+      <header id="navbar">
+        <ul id="navBarList">
+        <li class="navBarLink" id="btn1-2"><a href="index.html">Home</a></li>
+        <li class="navBarLink" id="btn1-1"><a href="index.html">Graphs</a></li>
+        <li class="navBarLink" id="btn1-0"><a href="index.html">Socials</a></li>
+        <li style="float:right" class="navBarAbout" id="btn2-0"><a class="active" href="index.html">Guides</a></li>
+      </ul>
+    </header>
+      <div id = 'mainPage'>
+      <div class="child">
+        <canvas id="TIRChart" width="300" height="300"></canvas>
+      </div>
+      <div class="child">
+        <canvas id='BGChart' width="500" height="300"></canvas>
+      </div>
+      <!-- <div>
+        <input type="checkbox" id="show graph">
+        <label for="show graph">Show graph</label>
+      </div> -->
     </div>
-    <div class="child">
-      <canvas id='BGChart' width="500" height="300"></canvas>
-    </div>
-    <div>
-      <input type="checkbox" id="show graph">
-      <label for="show graph">Show graph</label>
-    </div>
+  </div>
   </div>
 
   </body>

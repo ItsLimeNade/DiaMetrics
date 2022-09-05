@@ -1,5 +1,11 @@
 const Chart = require('chart.js');
 
+var parent = document.getElementById('container1');
+var child = document.getElementById('container2');
+child.style.right = child.clientWidth - child.offsetWidth + "px";
+
+
+
 const TIRCtx = document.getElementById('TIRChart');
 const TIRChart = new Chart(TIRCtx, {
     type: 'doughnut',
@@ -92,7 +98,7 @@ const BGChart = new Chart(BGCtx, {
             backgroundColor: BGbackgroundColor,
             tension: 0.4,
             segment: {
-                borderColor: BGbackgroundColor
+                borderColor: 'rgba(0,0,0,0)'
             }
         }]
     },
